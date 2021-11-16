@@ -1,0 +1,217 @@
+<HTML>
+<HEAD>
+<TITLE>MI PRIMER PÁGINA WEB</TITLE>
+<link rel="stylesheet" href="pgweb.css" type="text/css">
+</HEAD>
+<BODY>
+<h1>HTML y CSS</h1>
+<p> En esta página veremos todo lo aprendido durante este quimestre, haciendo uso
+de cada uno de las etiquetas correspondiente.</p>
+<hr>
+<h2>ELEMENTOS PRINCIPALES</h2>
+<ol>
+ <li>IMÁGENES</li>
+ <li>ENLACES</li>
+ <li>TABLAS</a></li>
+ <li>FORMULARIOS</a></li>
+</ol>
+<hr>
+
+<hr class="lin_img">
+<div class="imagenes">
+<h1 class="p_img">IMAGENES</h1>
+<p class="cont">Para incluir imágenes en el contenido de una página utilizaremos
+la etiqueta <img>, que es una etiqueta muy sencilla, que dispone de varios atributos para 
+modificar como se verá la imagen (los atributos src y alt son siempre obligatorios):</p>
+<br>
+<table class="tbl_img">
+<tr>
+  <th>ATRIBUTOS</th>
+  <th>DESCRIPCIÓN</th>
+ </tr>
+ <tr>
+  <td>SRC</td>
+  <td>Indica el nombre o la URL de la imagen a mostrar.<b><i>Atributo obligatorio.</i></b></td>
+ <tr>
+  <td>ALT</td>
+  <td>Establece un texto alternativo que describa la imagen a mostrar.<b><i>Atributo obligatorio.</i></b></td>
+ </tr>
+ <tr>
+  <td>WIDTH</td>
+  <td>Indica el ancho de la imagen en píxels (sin la unidad).<u>Se puede hacer desde CSS</u></td>
+ <tr>
+  <td>HEIGHT</td>
+  <td>Indica el alto de la imagen en píxels (sin la unidad).<u>Se puede hacer desde CSS.</u></td>
+ </tr>
+</table>
+<h2 class="ejm1">Un ejemplo básico para colocar una imagen sería el siguiente:</h2>
+<img src="ejm1.png" class="img1"><br>
+<p>Para mas información pulsar el siguiente botón: <a href="#" class="img">IMAGENES</a></p>
+</div>
+<hr>
+
+<hr class="lin_enl">
+<div class="enlaces">
+<h1 class="p_enl">ENLACES</h1>
+<p class="cont">Esta etiqueta debe tener, como mínimo, el atributo href,
+ya que es el atributo con el que se especifica la dirección URL al documento
+que se quiere enlazar. Aún así, la etiqueta <a> también tiene varios atributos
+opcionales, veamos un resumen de todos ellos:</p>
+<table class="tbl_enl">
+ <tr>
+  <th>ATRIBUTOS</th>
+  <th>VALOR</th>
+  <th>DESCRIPCIÓN</th>
+ </tr>
+ <tr>
+  <td>HREF</td>
+  <td>URL</td>
+  <td>Enlace al documento que se quiere cargar.<b><i>Atributo obligatorio./i></b></td>
+ <tr>
+  <td>DOWNLOAD</td>
+  <td>nombre_ext</td>
+  <td>Descarga el enlace (href) en lugar de abrirlo. Si se indica valor, se renombra.</td>
+ </tr>
+ <tr>
+  <td>TARGET</td>
+  <td>_BLANK-_SELF-_PARENT-_TOP</td>
+  <td>Abre el enlacen en diferentes lugares de la pagina web</td>
+ </tr>
+</table>
+<h2 class="ejm2">Un ejemplo básico para colocar enlaces sería el siguiente:</h2>
+<img src="ejm2.png" class="img2"><br>
+<p>Para mas información pulsar el siguiente botón: <a href="#" class="enl">ENLACES</a></p>
+</div>
+<hr class="lin_enl">
+<hr>
+
+
+<div class="tablas">
+<h1 class="p_tbl">TABLAS</h1>
+<p class="cont">Una tabla puede ser sencilla o compleja, dependiendo de nuestro
+objetivo y la cantidad de etiquetas o atributos a utilizar. Así pues, veamos primero
+las etiquetas básicas para crear una tabla de la forma más sencilla posible:</p>
+<table class="tbl_tbt">
+ <tr>
+  <th>ETIQUETA</th>
+  <th>DESCRIPCIÓN</th>
+ </tr>
+ <tr>
+  <td>TABLE</td>
+  <td>Etiqueta contenedora que tendrá en su interior toda la tabla.</td>
+ <tr>
+  <td>TR</td>
+  <td><i><u><b>Table Row.</b></u></i>Etiqueta contenedora de cada fila de la tabla.</td>
+ </tr>
+ <tr>
+  <td>TD</td>
+  <td><i><u><b>Table Data.</b></u></i>Cada una de las celdas de la tabla.</td>
+ </tr>
+ <tr>
+  <td>TH</td>
+  <td><i><u><b>Table Header.</b></u></i>Cada una de las celdas de cabecera de la tabla.</td>
+ </tr>
+</table>
+<h2 class="ejm3">Un ejemplo básico para colocar una tabla sería el siguiente:</h2>
+<img src="ejm3.png">
+<p>Para mas información pulsar el siguiente botón: <a href="#" class="tab">TABLAS</a></p>
+</div>
+
+<hr>
+<div class="formularios">
+<h1 class="p_form">FORMULARIOS</h1>
+<p class="cont">Para comenzar con la creación de un formulario,
+el primer paso es indicar una etiqueta contenedora <b>form</b>,
+que incluirá toda la información que se quiere recoger en ese formulario:</p>
+<table>
+ <tr>
+  <th>ATRIBUTOS</th>
+  <th>VALOR</th>
+  <th>DESCRIPCIÓN</th>
+ </tr>
+ <tr>
+  <td>ACTION</td>
+  <td>URL</td>
+  <td>Dirección <b><i>URL del back-end</i></b>donde se enviará la información del formulario.</td>
+ <tr>
+  <td>METHOD</td>
+  <td>GET-POST</td>
+  <td>Método HTTP de envío. <b>GET</b> a través de URL, <b>POST</b> para envío extenso.</td>
+ </tr>
+ <tr>
+  <td>NAME</td>
+  <td>NOMBRE</td>
+  <td>Nombre del formulario. Útil para procesar posteriormente.</td>
+ </tr>
+ <tr>
+  <td>TARGET</td>
+  <td>DESTINO</td>
+  <td>Nombre del lugar donde se abrirá el formulario.<i><u><b>\_blank</b></u></i>para nueva pestaña.</td>
+ </tr>
+</table>
+<h2 class="ejm4">Un ejemplo básico para colocar un formulario sería el siguiente:</h2>
+<img src="ejm4.png">
+<p>Para mas información pulsar el siguiente botón: <a href="#" class="form">FORMULARIOS</a></p>
+</div>
+<hr>
+<hr>
+<div class="forms">
+<h3> REGISTRÁTE EN NUESTRO CURSO ONLINE </h3>
+<form method="post" action="#">
+  <input class="controles" type="text" name="nombre" placeholder= "Ingrese su Nombre">
+  <input class="controles" type="text" name="edad"  maxlength="2" placeholder= "Ingrese su Edad">
+  <input class="controles" type="email" name="correo" placeholder= "Ingrese su Correo">
+
+<label class="radio">Hombre
+  <input type="radio" name="sexo" id="hombre">
+ <span class="check"></span>
+</label>
+
+<label class="radio">Mujer
+  <input type="radio" name="sexo" id="mujer">
+  <span class="check"></span>
+</label>
+<br>
+<h4>Fecha de nacimiento:</h4>
+<div class="seleccion">
+    <select name="dias">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>21</option>
+  </select>
+</div>
+<div class="seleccion2">
+   <select name="meses">
+    <option>Enero</option>
+    <option>Febrero</option>
+    <option>Marzo</option>
+    <option>Abril</option>
+    <option>Mayo</option>
+    <option>Junio</option>
+    <option>Julio</option>
+    <option>Agosto</option>
+    <option>Septiembre</option>
+    <option>Octubre</option>
+    <option>Noviembre</option>
+    <option>Diciembre</option>
+  </select>
+</div>
+<div class="seleccion3">
+  <select name="años">
+    <option>1991</option>
+    <option>2000</option>
+    <option>2005</option>
+    <option>2008</option>
+    <option>2010</option>
+    <option>2012</option>
+  </select>
+</div><br><br>
+<input class="boton" type="submit" value="Enviar formulario" />
+<br>
+</form>
+</div>
+</body>
+</html>
